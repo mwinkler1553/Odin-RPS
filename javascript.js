@@ -7,3 +7,5 @@ else {
 }
 
 }
+
+var playerSelection = prompt("Please type rock, paper, or scissors");
