@@ -1,11 +1,9 @@
-function getComputerChoice(){
-var computerChoice = Math.random();
-if (computerChoice < 0.34) {return 'rock';}
-else if (computerChoice > 0.34 && computerChoice < 0.67) {return 'paper';}
-else {
-    return 'scissors';
-}
+const options = ['rock' , 'paper' , 'scissors'];
 
+function getComputerChoice(){
+    const choice = options[Math.floor(Math.random() * options.length)];
+    return choice;
 }
 
 var playerSelection = prompt("Please type rock, paper, or scissors");
+
